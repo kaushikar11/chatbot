@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="legaldad.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalAppa - Legal Document Drafter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <img src="legaldad.png" alt="LegalAppa Logo" class="logo" />
+        </div>
+    </header>
+
+
+    <!-- Button to Open the Chatbot -->
+    <button id="open-chatbot" class="open-chatbot-button">
+        <h1>ASK</h1>
+        <img src="legaldad.png" alt="LegalAppa icon" class="w-12 h-12 rounded-md">
+    </button>
+
+    <!-- Chatbot Pop-up -->
+    <div id="chatbot-popup" class="chatbot-popup">
+        <!-- Pop-up Close Button -->
+        <span class="close-button" id="close-chatbot">&times;</span>
+
+        <div class="p-2 bg-gemRegular flex gap-5 items-center">
+            <img src="legaldad.png" alt="chatbot image" class="w-10 h-10 rounded-md"/>
+            <h1 class="text-gemDeep text-lg font-medium">LegalAppa</h1>
+        </div>
+
+        <!-- Chat Area -->
+        <div id="chat-container" class="chat-container">
+            <!-- Chat messages will appear here -->
+        </div>
+
+        <!-- Text Input Box -->
+        <form action="" method="post" class="chat-form p-2" id="chat-form">
+            <textarea
+                name="prompt"
+                id="prompt"
+                cols="30"
+                rows="2"
+                class="w-full p-2 rounded-md resize-none focus:outline-none"
+                style="background: rgb(255, 255, 255); border: 1px solid grey; color: rgb(31,31,31);"
+                placeholder="Enter message here..."
+            ></textarea>
+
+            <!-- File Input -->
+    <input
+    type="file"
+    id="file-input"
+    class="w-full p-1 mb-2 border border-grey rounded-md"
+/>
+
+            <button type="submit" class="w-full p-1 bg-gemDeep rounded text-white">
+                Send
+            </button>
+        </form>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
