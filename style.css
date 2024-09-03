@@ -727,7 +727,7 @@ body {
 .chat-container {
   height: calc(100% - 150px); /* Adjust height to account for chat form */
   overflow-y: auto; /* Enable vertical scrolling */
-  padding: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box; /* Include padding in the height */
 }
 
